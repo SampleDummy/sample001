@@ -6,6 +6,7 @@ double derivative(double(double), double, double);
 int main()
 {
     std::cout << derivative([](double x){return std::exp(x) * x * x;}, 2, 0.001) << std::endl;
+    std::cout << "My work is done!" << "\n";
     return 0;
 }
 
