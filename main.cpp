@@ -1,10 +1,11 @@
 #include <iostream>
+#include <cmath>
 
 double derivative(double(double), double, double);
 
 int main()
 {
-    std::cout << derivative([](double x){return x * x;}, 2, 0.001) << std::endl;
+    std::cout << derivative([](double x){return std::exp(x) * x * x;}, 2, 0.001) << std::endl;
     return 0;
 }
 
